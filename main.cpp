@@ -1,5 +1,6 @@
 #include <iostream>
 #include "rectangle.h"
+#include "triangle.h"
 
 void handleRectangle() {
     double length, width, perimeter, square, diagonal;
@@ -18,6 +19,7 @@ void handleRectangle() {
 int main() {
     int choice;
     std::cout << "1. Прямоугольник" << std::endl;
+    std::cout << "2. Трегульник" << std::endl;
     std::cout << "Выберите фигуру: ";
     
     if (!(std::cin >> choice)) {
@@ -28,6 +30,10 @@ int main() {
     switch (choice) {
         case 1: { 
             handleRectangle();
+            break;
+        }
+        case 2:{
+            handleTriangle();
             break;
         }
         default:
