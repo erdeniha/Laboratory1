@@ -5,4 +5,4 @@ void calculateRectangle(double length, double width, double &perimeter, double &
     square = length * width;
     diagonal = sqrt(length * length + width * width);
 }
-//Комментайрий
+//Комментарий
